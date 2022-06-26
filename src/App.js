@@ -39,7 +39,7 @@ function App() {
       <CardContent>
         
       <Typography component='div'>
-<img src={mainSquare} />
+{/* <img src={mainSquare} /> */}
         Equilibrium #3429 
       </Typography>
 
