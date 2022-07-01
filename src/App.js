@@ -9,6 +9,7 @@ import { shadows } from '@mui/system';
 // import { createTheme } from '@mui/system';
 // import { ThemeProvider } from '@emotion/react';
 import mainSquare from './images/image-equilibrium.jpg'
+import ButtonBase from '@mui/material/ButtonBase';
 
 
 
@@ -31,19 +32,27 @@ function App() {
   //   },
   // })
 
+  const images = [
+    {
+      
+    }
+  ]
+
   return (
     // <ThemeProvider theme={theme}>
 
 <Paper sx={{bgcolor:'#11255e', borderRadius: 0, height: 200, padding: 25}}>
-<Card sx={{maxWidth: 300, maxHeight: 400, mx:'auto', border: 1}} variant='card'>
+<Card sx={{maxWidth: 300, maxHeight: 400, border: 1}} variant='card'>
       <CardContent>
-        
-      <Typography component='div'>
-{/* <img src={mainSquare} /> */}
+        <Button>
+
+<img src={mainSquare}  alt='square'/>
+        </Button>
+      <Typography>
         Equilibrium #3429 
       </Typography>
 
-      <Typography component='div'>
+      <Typography>
         Our Equilibrium collection promotes balance and calm.
       </Typography>
 
