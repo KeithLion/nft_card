@@ -9,7 +9,8 @@ import { shadows } from '@mui/system';
 // import { createTheme } from '@mui/system';
 // import { ThemeProvider } from '@emotion/react';
 import mainSquare from './images/image-equilibrium.jpg'
-import ButtonBase from '@mui/material/ButtonBase';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 
 
 
@@ -32,50 +33,51 @@ function App() {
   //   },
   // })
 
-  const images = [
-    {
-      
-    }
-  ]
 
   return (
     // <ThemeProvider theme={theme}>
 
-<Paper sx={{bgcolor:'#11255e', borderRadius: 0, height: 200, padding: 25}}>
-<Card sx={{maxWidth: 300, maxHeight: 400, border: 1}} variant='card'>
+<Paper sx={{bgcolor:'#11255e', borderRadius: 0, padding: 25, width:'100%'}}>
+<Card sx={{border: 1, maxWidth: 308, position: 'relative'}} variant='card'>
       <CardContent>
-        <Button>
+        <Button style={{display:' block', position: 'relative'}}>
 
-<img src={mainSquare}  alt='square'/>
+<img src={mainSquare}  alt='' style={{maxWidth:'100%', borderRadius: 8, display:'block'}}/>
         </Button>
-      <Typography>
+
+
+<Link  href='#' sx={{textDecoration: 'none',':hover':{color:'black'}}} >
         Equilibrium #3429 
-      </Typography>
+</Link>
 
-      <Typography>
+      <p>
         Our Equilibrium collection promotes balance and calm.
-      </Typography>
+      </p>
+      
 
-      <Typography component='div'>
+<div>
         <Box sx={{display: 'flex',  justifyContent: 'space-between'}}>
-
       <span>0.041 ETH </span> <span> 3 days left</span> 
         </Box>
-      </Typography>
-        <hr></hr>
-      <Typography component='div'>
-        <span>Creation of </span> <span> Jules Wyvern </span> 
-      </Typography>
+</div>
 
+        <hr></hr>
+<div>
+        <span>
+
+          Creation of </span> 
+        <Link href='#' sx={{textDecoration: 'none',':hover':{color:'black'}}}> Jules Wyvern </Link> 
+</div>
+
+
+          </CardContent>
+          </Card>
       {/* <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'
         >Frontend Mentor</a
         >. Coded by <a href="https://github.com/KeithLion">Keith Norton</a>.
       </div> */}
-
-          </CardContent>
-          </Card>
 </Paper>
   );
 }
