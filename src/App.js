@@ -3,9 +3,9 @@ import Card from '@mui/material/Card'
 import Box from '@mui/material/Box';
 import * as React from 'react'
 import CardContent  from '@mui/material/CardContent';
-import { Typography } from '@mui/material';
+// import { Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
-import { shadows } from '@mui/system';
+// import { shadows } from '@mui/system';
 // import { createTheme } from '@mui/system';
 // import { ThemeProvider } from '@emotion/react';
 import Button from '@mui/material/Button';
@@ -20,19 +20,7 @@ import avatar from './images/image-avatar.png'
 function App(props) {
 
   // const theme = createTheme({
-  //   palette: {
-  //       primary:{
-  //         softBlue: '#577db2',
-  //         cyan: '#007f7b'
-  //       },
-  //       neutral: {
-  //         // different shades of dark blue
-  //         main: '#0c131c',
-  //         card: '#141c28',
-  //         line: '#2e3744',
-  //         white: '#ffffff'
-  //       },
-  //   },
+
   // })
 
 
