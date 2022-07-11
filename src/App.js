@@ -3,11 +3,8 @@ import Card from '@mui/material/Card'
 import Box from '@mui/material/Box';
 import * as React from 'react'
 import CardContent  from '@mui/material/CardContent';
-// import { Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
 // import { shadows } from '@mui/system';
-// import { createTheme } from '@mui/system';
-// import { ThemeProvider } from '@emotion/react';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import mainSquare from './images/image-equilibrium.jpg'
@@ -17,18 +14,14 @@ import avatar from './images/image-avatar.png'
 
 
 
-function App(props) {
+function App(){
 
-  // const theme = createTheme({
-
-  // })
 
 
   return (
-    // <ThemeProvider theme={theme}>
-
-<Paper sx={{bgcolor:'#0c131c', borderRadius: 0, padding: 25, width:'100%', paddingBottom:0}}>
-<Card sx={{border: 1, maxWidth: 308, position: 'relative', bgcolor: '#141c28'}} variant='card'>
+<Paper sx={{bgcolor:'#0c131c', borderRadius: 0,padding:110}}>
+{/* <meta name="viewport" content="initial-scale=1, width=device-width" /> */}
+<Card sx={{border: 1, width:'100%',maxWidth: 308, position: 'relative', bgcolor: '#141c28'}} variant='card'>
       <CardContent>
         
         <Button style={{display:' block', position: 'relative'}}>
