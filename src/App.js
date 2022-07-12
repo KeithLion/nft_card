@@ -19,10 +19,10 @@ function App(){
 
 
   return (
-<Paper sx={{bgcolor:'#0c131c', borderRadius: 0,padding:110}}>
-{/* <meta name="viewport" content="initial-scale=1, width=device-width" /> */}
-<Card sx={{border: 1, width:'100%',maxWidth: 308, position: 'relative', bgcolor: '#141c28'}} variant='card'>
-      <CardContent>
+<Paper sx={{bgcolor:'#0c131c', borderRadius: 0, height:600}}>
+
+<Card sx={{borderRadius:3, width:'100%',maxWidth: 300, position: 'relative', bgcolor: '#141c28', margin:' auto',top:'10%'}} variant='card'>
+      <CardContent sx={{fontFamily:'outfit,san-serif'}}>
         
         <Button style={{display:' block', position: 'relative'}}>
 <img src={mainSquare}  alt='' style={{maxWidth:'100%', borderRadius: 8, display:'block'}}/>
@@ -34,13 +34,13 @@ function App(){
         Equilibrium #3429 
 </Link>
 
-      <p style={{color:'#577db2', fontFamily:'outfit,sans-serif', fontWeight:400}}>
+      <p style={{color:'#577db2', fontWeight:400}}>
         Our Equilibrium collection promotes balance and calm.
       </p>
       
 
 <div>
-        <Box sx={{display: 'flex', justifyContent: 'space-between', fontFamily:'outfit,san-serif',fontWeight:400}}>
+        <Box sx={{display: 'flex', justifyContent: 'space-between',fontWeight:400}}>
       <span style={{color:'#007f7b'}}>
         <img src={prism} alt=''/>
         0.041 ETH 
@@ -53,7 +53,7 @@ function App(){
 </div>
 
         <hr></hr>
-<div style={{fontFamily:'outfit,sans-serif', fontWeight:300}}>
+<div style={{ fontWeight:300}}>
         <span style={{color:'#577db2', display: 'inlineBlock'}}>
         <img src={avatar} alt='' style={{maxWidth: 25}}/>
           Creation of </span> 
