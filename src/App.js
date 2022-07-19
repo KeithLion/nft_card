@@ -5,7 +5,6 @@ import * as React from 'react'
 import CardContent  from '@mui/material/CardContent';
 import Paper from '@mui/material/Paper';
 // import { shadows } from '@mui/system';
-import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import mainSquare from './images/image-equilibrium.jpg'
 import clock from './images/icon-clock.svg'
@@ -24,10 +23,12 @@ function App(){
 <Card sx={{borderRadius:3, width:'100%',maxWidth: 300, position: 'relative', bgcolor: '#141c28', margin:' auto',top:'10%'}} variant='card'>
       <CardContent sx={{fontFamily:'outfit,san-serif'}}>
         
-        <Button style={{display:' block', position: 'relative'}}>
-<img src={mainSquare}  alt='' style={{maxWidth:'100%', borderRadius: 8, display:'block'}}/>
+        <a href='#' style={{display:' block', position: 'relative',padding:0,borderRadius:8, paddingBottom:15}}>
 
-        </Button>
+<img src={mainSquare}  alt='' style={{maxWidth:'100%', borderRadius: 8, display:'block',':hover':{color:'#00fff6'}}}/>
+
+
+        </a>
 
 
 <Link  href='#' sx={{textDecoration: 'none',color:'#ffffff',':hover':{color:'#007f7b'}, fontFamily:'outfit,sans-serif', fontWeight:600}} >
@@ -46,16 +47,18 @@ function App(){
         0.041 ETH 
         </span> 
       <span style={{color:'#577db2'}}> 
+      <span>
 <img src={clock} alt=''/>
+      </span>
       3 days left
       </span> 
         </Box>
 </div>
 
-        <hr></hr>
+        <hr/>
 <div style={{ fontWeight:300}}>
-        <span style={{color:'#577db2', display: 'inlineBlock'}}>
         <img src={avatar} alt='' style={{maxWidth: 25}}/>
+        <span style={{color:'#577db2', display: 'inlineBlock'}}>
           Creation of </span> 
         <Link href='#' sx={{textDecoration: 'none',color:'#ffffff',':hover':{color:'#007f7b'}}}> Jules Wyvern </Link> 
 </div>
