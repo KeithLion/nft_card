@@ -18,7 +18,7 @@ function App(){
 
 
   return (
-<Paper sx={{bgcolor:'#0c131c', borderRadius: 0, height:600}}>
+<Paper sx={{bgcolor:'#0c131c', borderRadius: 0, height:600, width:'100%'}}>
 
 <Card sx={{borderRadius:3, width:'100%',maxWidth: 300, position: 'relative', bgcolor: '#141c28', margin:' auto',top:'10%'}} variant='card'>
       <CardContent sx={{fontFamily:'outfit,san-serif'}}>
@@ -59,7 +59,8 @@ function App(){
 <div style={{ fontWeight:300}}>
         <img src={avatar} alt='' style={{maxWidth: 25}}/>
         <span style={{color:'#577db2', display: 'inlineBlock'}}>
-          Creation of </span> 
+          Creation of 
+          </span> 
         <Link href='#' sx={{textDecoration: 'none',color:'#ffffff',':hover':{color:'#007f7b'}}}> Jules Wyvern </Link> 
 </div>
 
